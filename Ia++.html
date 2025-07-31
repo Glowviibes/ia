@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companheiras Virtuais com IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/4a9c9a5a8f.js" crossorigin="anonymous"></script>
+    <style>
+        /* Particle effect background */
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+        
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Custom glow effects */
+        .glow {
+            text-shadow: 0 0 10px rgba(255, 20, 147, 0.7), 
+                        0 0 20px rgba(255, 0, 255, 0.5);
+        }
+        
+        .btn-glow {
+            box-shadow: 0 0 15px rgba(255, 20, 147, 0.7), 
+                       0 0 30px rgba(255, 0, 255, 0.4);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-glow:hover {
+            box-shadow: 0 0 20px rgba(255, 20, 147, 0.9), 
+                       0 0 40px rgba(255, 0, 255, 0.6);
+            transform: translateY(-2px);
+        }
+        
+        /* Image hover effect */
+        .img-hover-effect {
+            transition: all 0.3s ease;
+            filter: drop-shadow(0 0 8px rgba(255, 20, 147, 0.6));
+        }
+        
+        .img-hover-effect:hover {
+            transform: scale(1.03);
+            filter: drop-shadow(0 0 12px rgba(255, 0, 255, 0.7));
+        }
+        
+        /* Pulse animation */
+        @keyframes pulse {
+            0% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.05); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        
+        .animate-pulse-slow {
+            animation: pulse 3s infinite;
+        }
+        
+        /* Custom gradient text */
+        .gradient-text {
+            background: linear-gradient(45deg, #ff1493, #ff00ff, #ff6347);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <div class="content min-h-screen flex flex-col">
+        <!-- Hero Section -->
+        <section class="py-16 px-6 md:px-16 lg:px-24 xl:px-32">
+            <div class="max-w-6xl mx-auto text-center">
+                <div class="mb-6 animate-pulse-slow">
+                    <i class="fas fa-robot text-5xl gradient-text"></i>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 glow">
+                    <span class="gradient-text">Crie sua IA Companheira</span>
+                    <br>
+                    <span class="text-xl md:text-2xl font-normal">
+                        e Transforme Emoção em Renda
+                    </span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-10 text-pink-300 font-medium">
+                    Aprenda a desenvolver personagens cativantes com IA e ganhar dinheiro de forma ética e criativa
+                </p>
+                
+                <a href="https://pay.kiwify.com.br/dF4gmM5" class="btn-glow inline-block bg-gradient-to-r from-pink-600 via-purple-600 to-red-600 text-white font-bold py-4 px-10 rounded-full text-xl transition-all duration-300 transform hover:scale-105">
+                    Quero acessar agora! <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                
+                <div class="mt-12 mb-8 relative">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="h-1 w-3/4 bg-gradient-to-r from-transparent via-purple-500 to-transparent opacity-30 rounded-full"></div>
+                    </div>
+                    <div class="relative flex justify-center">
+                        <div class="px-4 bg-gray-900 text-pink-400 inline-flex items-center">
+                            <i class="fas fa-angle-double-down mr-2 text-xl"></i>
+                            <span>Descubra como</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Benefits Section -->
+        <section class="py-16 px-6 md:px-16 bg-gradient-to-b from-gray-900 via-gray-900/90 to-gray-900 border-t border-b border-gray-800">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text">
+                    Seus Novos <span class="text-pink-400">Companheiros Digitais</span>
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-pink-600 transition-all duration-300">
+                        <div class="text-pink-500 text-3xl mb-4">
+                            <i class="fas fa-smile-wink"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-pink-300">Personagens Carismáticas</h3>
+                        <p class="text-gray-300">Crie assistentes virtuais com personalidades únicas que encantam os usuários.</p>
+                    </div>
+                    
+                    <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-purple-600 transition-all duration-300">
+                        <div class="text-purple-500 text-3xl mb-4">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-purple-300">Bots no Telegram</h3>
+                        <p class="text-gray-300">Implemente facilmente no mensageiro mais popular com respostas inteligentes.</p>
+                    </div>
+                    
+                    <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-red-600 transition-all duration-300">
+                        <div class="text-red-500 text-3xl mb-4">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-red-300">Monetização Criativa</h3>
+                        <p class="text-gray-300">Gere renda de forma ética com interações premium e conteúdo exclusivo.</p>
+                    </div>
+                    
+                    <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-pink-600 transition-all duration-300">
+                        <div class="text-pink-400 text-3xl mb-4">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-pink-200">100% Digital</h3>
+                        <p class="text-gray-300">Acesse de qualquer dispositivo, sem instalações complexas ou custos extras.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Product Mockup Section -->
+        <section class="py-20 px-6 md:px-16">
+            <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
+                    <div class="w-full max-w-lg mx-auto rounded-lg img-hover-effect bg-gradient-to-br from-pink-900/30 via-purple-900/30 to-gray-900 flex items-center justify-center aspect-[3/4]">
+                        <i class="fas fa-robot text-8xl text-pink-500 opacity-40"></i>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">
+                        O Guia Definitivo de <span class="text-pink-400">Companheiros Virtuais</span>
+                    </h2>
+                    <p class="text-lg text-gray-300 mb-6">
+                        Domine as técnicas mais avançadas para criar personagens IA memoráveis que não apenas conversam, mas também geram renda enquanto você dorme.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-500 mt-1 mr-3"></i>
+                            <span>Técnicas avançadas de personalidade digital</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-500 mt-1 mr-3"></i>
+                            <span>Modelos de monetização ética passo a passo</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-500 mt-1 mr-3"></i>
+                            <span>Scripts prontos para personalizar</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-500 mt-1 mr-3"></i>
+                            <span>Ferramentas gratuitas e premium</span>
+                        </li>
+                    </ul>
+                    <a href="https://pay.kiwify.com.br/dF4gmM5" class="btn-glow inline-block bg-gradient-to-r from-pink-600 via-purple-600 to-red-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105">
+                        Garantir Meu Acesso <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Target Audience Section -->
+        <section class="py-16 px-6 md:px-16 bg-gradient-to-b from-gray-900 via-gray-900/90 to-gray-900">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text">
+                    Para Quem é <span class="text-pink-400">Este Guia?</span>
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl text-center border border-gray-700 transition-all duration-300 hover:border-pink-600">
+                        <div class="w-20 h-20 mx-auto mb-6 rounded-full overflow-hidden border-2 border-pink-300">
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Criadora de Conteúdo" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-pink-300">Criadores de Conteúdo</h3>
+                        <p class="text-gray-300">Diversifique sua renda criando uma IA que complemente seu conteúdo principal.</p>
+                    </div>
+                    
+                    <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl text-center border border-gray-700 transition-all duration-300 hover:border-purple-600">
+                        <div class="w-20 h-20 mx-auto mb-6 rounded-full overflow-hidden border-2 border-purple-300">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Entusiasta de IA" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-purple-300">Entusiastas de IA</h3>
+                        <p class="text-gray-300">Aprenda a criar soluções inovadoras que vão além do convencional.</p>
+                    </div>
+                    
+                    <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl text-center border border-gray-700 transition-all duration-300 hover:border-red-600">
+                        <div class="w-20 h-20 mx-auto mb-6 rounded-full overflow-hidden border-2 border-red-300">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Renda Extra" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-red-300">Renda Extra</h3>
+                        <p class="text-gray-300">Transforme seu conhecimento em fluxos de renda passivos e escaláveis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section class="py-20 px-6 md:px-16">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text">
+                    O Que Dizem <span class="text-pink-400">Nossos Alunos</span>
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-pink-900/50">
+                        <div class="flex items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Rafael S." class="w-10 h-10 rounded-full object-cover mr-3">
+                            <div>
+                                <h4 class="font-bold text-pink-300">Rafael S.</h4>
+                                <div class="flex text-yellow-400 text-sm">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 italic">"Em 2 semanas já recuperei o investimento. Minha IA companheira já tem fãs que pagam pela versão premium!"</p>
+                    </div>
+                    
+                    <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-purple-900/50">
+                        <div class="flex items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Ana L." class="w-10 h-10 rounded-full object-cover mr-3">
+                            <div>
+                                <h4 class="font-bold text-purple-300">Ana L.</h4>
+                                <div class="flex text-yellow-400 text-sm">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 italic">"As técnicas de personalidade fizeram toda diferença. Meu bot tem um charme único que encanta todos!"</p>
+                    </div>
+                    
+                    <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-red-900/50">
+                        <div class="flex items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Carlos M." class="w-10 h-10 rounded-full object-cover mr-3">
+                            <div>
+                                <h4 class="font-bold text-red-300">Carlos M.</h4>
+                                <div class="flex text-yellow-400 text-sm">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 italic">"Nunca imaginei que daria pra monetizar com IA assim. O guia é direto ao ponto com exemplos práticos que funcionam."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Final CTA Section -->
+        <section class="py-20 px-6 md:px-16 bg-gradient-to-b from-gray-900 to-black">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-5xl font-bold mb-8 glow">
+                    <span class="gradient-text">Pronto para Criar Sua</span>
+                    <br>
+                    <span class="text-pink-400">Companheira Virtual Profissional?</span>
+                </h2>
+                
+                <p class="text-xl text-gray-300 mb-10">
+                    Comece hoje mesmo sua jornada no futuro das interações digitais. 
+                    <br>
+                    <span class="text-pink-300 font-medium">Transforme sua criatividade em renda com IA de forma ética.</span>
+                </p>
+                
+                <div class="mb-12">
+                    <a href="https://pay.kiwify.com.br/dF4gmM5" class="btn-glow inline-block bg-gradient-to-r from-pink-600 via-purple-600 to-red-600 text-white font-bold py-4 px-12 rounded-full text-xl transition-all duration-300 transform hover:scale-105">
+                        Quero Meu Acesso Imediato! <i class="fas fa-rocket ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="flex items-center justify-center space-x-4 text-sm text-gray-500">
+                    <div class="flex items-center">
+                        <i class="fas fa-lock mr-2"></i>
+                        <span>Pagamento Seguro</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-shield-alt mr-2"></i>
+                        <span></span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-trophy mr-2"></i>
+                        <span>100% Digital</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="py-8 px-6 border-t border-gray-800 bg-black">
+            <div class="max-w-6xl mx-auto text-center text-gray-500 text-sm">
+                <p class="mb-2">
+                    Este produto é entregue por e-mail imediatamente após a compra. 100% digital, seguro e compatível com celular.
+                </p>
+                <p>
+                    © 2023 Companheiras Virtuais com IA. Todos os direitos reservados.
+                </p>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- Particles.js Script -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        // Initialize particles.js
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": ["#ff1493", "#ff00ff", "#ff6347"]
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ff00ff",
+                    "opacity": 0.3,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 75,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>
